@@ -11,15 +11,15 @@ While we can't require you to keep the "Powered by Minactyl" notice in the foote
 
 Please note : We wont be responsible to any damages caused during installation
 
-# Dependence for windows installer 🪟
+# Dependencies for windows installer 🪟
 
 Git [Download](https://git-scm.com/downloads)
 
 Node.js [Download](https://nodejs.org/en/download/)
 
-only for windows installer
+Use only if you are installing on a Windows System
 
-# Install In VPS 💾
+# Installation In VPS 💾
 
 <h2>Installing Dependencies</h2>
 
