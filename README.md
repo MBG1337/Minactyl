@@ -11,7 +11,7 @@ While we can't require you to keep the "Powered by Minactyl" notice in the foote
 
 Please note : We wont be responsible to any damages caused during installation
 
-# Dependencies for windows installer 🪟
+# Dependencies for windows installation 🪟
 
 Git [Download](https://git-scm.com/downloads)
 
