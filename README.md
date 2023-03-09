@@ -26,8 +26,8 @@ Use only if you are installing on a Windows System
 ```sudo apt update && sudo apt upgrade```<br>
 ```sudo apt install gi```<br>
 ```curl -fsSL https://deb.nodesource.com/setup_14.x | sudo bash -```<br>
-```apt install nodejs<br>```
-```npm -v<br>```
+```apt install nodejs```<br>
+```npm -v```<br>
 ```git clone https://github.com/MBG-Codes-You/Minactyl.git```<br>
 ```cd Minactyl```<br>
 ```npm install```<br>
