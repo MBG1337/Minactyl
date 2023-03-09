@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title><%= extra.arcio.title %></title>
+    <% if (settings.api.arcio.enabled == true) { %>
+    <script async src="https://arc.io/widget.min.js#<%= settings.api.arcio.widgetid %>"></script>
+    <% } %>
+    <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+    <link rel="icon" href="https://media.discordapp.net/attachments/1056945635074527293/1082342762705326131/pterodactyl.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <link rel="stylesheet" href="/assets/minactyl/vendor/nucleo/css/nucleo.css" type="text/css">
+    <link rel="stylesheet" href="/assets/minactyl/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="/assets/minactyl/css/argon.css?v=1.2.0" type="text/css">
+      
+            <%- include('./minactyl/widgets') %>
+
+</head>
+<body>
+  
+  <%- include('./minactyl/mainnav') %>
+    <%- include('./minactyl/widgets') %>
+      <%- include('./minactyl/header') %>
+      <%- include('./minactyl/ads') %>
+        <br></br>
+        <!-- Page content -->
+                    <div class="row">
+                        <div class="col-md-12 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="card-title"><h1>Minactyl Information</h1>
+                                <div class="card-body">
+                                    <h2>Latest version » <%= settings.version %><h2>
+
+                                    <h2>Theme » <%= settings.defaulttheme %><h2>
+
+                                    <h2>Port » <%= settings.website.port %><h2>
+                                    <BR>
+                                    <h1>Company Information</h1>
+                                    <h2>Company owner ⟫ <%= settings.companyinfo.owner %>
+                                    <h2>Company name ⟫ <%= settings.companyinfo.companyname %>
+                            </div>
+                        </div>
+                    </div>
