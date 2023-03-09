@@ -1,7 +1,7 @@
 {
-  "name": "Qwaekactyl",
+  "name": "Minactyl",
   "version": "0.4.5",
-  "description": "Qwaekactyl is a professional panel for allowing users to split resources for servers on the Pterodactyl Panel.",
+  "description": "Minactyl client is the best cliient area for pterodactyl!",
   "main": "index.js",
   "dependencies": {
     "@fullcalendar/core": "^5.10.1",
@@ -230,12 +230,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Qwaekactyl/Qwaekactyl.git"
+    "url": "git+https://github.com/MBG1337/Minactyl.git"
   },
   "author": "Two",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Qwaekactyl/Qwaekactyl/issues"
+    "url": "https://github.com/MBG1337/Minactyl/issues"
   },
-  "homepage": "https://github.com/Qwaekactyl/Qwaekactyl#readme"
+  "homepage": "https://github.com/MBG1337/Minactyl#readme"
 }
