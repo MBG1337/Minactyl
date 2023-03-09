@@ -45,7 +45,7 @@ Use only if you are installing on a Windows System
 
 ![Minactyl](https://media.discordapp.net/attachments/1080937562144772116/1083340773656895519/image.png?width=1342&height=671)
 
- <h2>Want your theme to be here? give us a dm at `MBG#1337` on discord</h2>
+ <h2>Want your theme to be here? give us a dm at</h2> `MBG#1337` <h2>on discord</h2>
 
 
 
