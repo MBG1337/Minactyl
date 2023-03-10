@@ -1,373 +1,371 @@
 {
-  "version": "1",
-  "defaulttheme": "Minactyl",
-  "website": {
-    "port": 8000, 
-    "secret": "ExampleSecret", 
-    "maintenance": true,
-
-    "sitekey": "",
-    "secretkey": "",
-    "note": "You Can Get These From https://www.google.com/recaptcha/admin, this is to ensure security of the host, We highly recommend getting it"
-  },
-  "companyinfo": {
-    "owner": "",
-    "companyname": "", 
-    "clientlink": "" 
-   },
-  "pterodactyl": {
-    "domain": "your_panel_link_goes_here", 
-    "key": "ptla_ThisIsAnExampleKey" 
-  },
-  "google_ads": {
-    "enabled": false,
-    "script": "",
-    "note": "Using this, you can easily apply ad's to your client, for example, Google Adsense, Adsterra, etc."
-  },
-  "custom_ads":{
-    "enabled": false, 
-    "pic": "", 
-    "link": "", 
-    "width": "468",
-    "height": "60",
-    "note": "this feature allows you to display a custom advertisement on the client panel"
-  },
- "widget": {
-    "enabled": false,
-    "server_id": "",
-    "channel_id": "",
-    "note": "Use this feature to easily integrate widgetbot.io into your client. Follow the guide on https://widgetbot.io to set it up."
-  },
-  "status":{
-    "enabled": true, 
-    "url": "https://example.status.link"
-  },
-    "giftres":{
-    "enabled": true, 
-    "note": "This allows you to decide if you want your users to gift resources or not"
-  },
+    "version": "1",
+    "defaulttheme": "Minactyl",
+    "website": {
+      "port": 8000, 
+      "secret": "ExampleSecret", 
+      "maintenance": true,
   
-    "discordserver":{
-    "enabled": true, 
-    "invitelink": "https://discord.gg/nmpzPF5rnW" 
-  },
-    "donate":{
-    "enabled": true, 
-    "link": "" 
-  },
-
- 
-  "database": "database.sqlite", 
-  "api": {
-    "client": {
-       "api": {
-         "enabled": false,
-         "code": ""
-       },
-       "j4r": {
-        "enabled": true, 
-        "ads": [
-          {
-            "name": "Name",
-            "invite": "Discord Server invite",
-            "id": "Server Id",
-            "ram": "512",
-            "disk": 512,
-            "cpu": 20
-          },
-          {
-            "name": "Name",
-            "invite": "Discord Server invite",
-            "id": "Server Id",
-            "ram": "512",
-            "disk": 512,
-            "cpu": 20
-          }
-        ]
-      },
-       "bot": {
-         "token": "",
-         "joinguild": {
-           "_comment": "The Discord bot must be in these servers and have invite permissions.",
+      "sitekey": "",
+      "secretkey": "",
+      "note": "You Can Get These From https://www.google.com/recaptcha/admin, this is to ensure security of the host, We highly recommend getting it"
+    },
+    "companyinfo": {
+      "owner": "",
+      "companyname": "", 
+      "clientlink": "" 
+     },
+    "pterodactyl": {
+      "domain": "your_panel_link_goes_here", 
+      "key": "ptla_ThisIsAnExampleKey" 
+    },
+    "google_ads": {
+      "enabled": false,
+      "script": "",
+      "note": "Using this, you can easily apply ad's to your client, for example, Google Adsense, Adsterra, etc."
+    },
+    "custom_ads":{
+      "enabled": false, 
+      "pic": "", 
+      "link": "", 
+      "width": "468",
+      "height": "60",
+      "note": "this feature allows you to display a custom advertisement on the client panel"
+    },
+   "widget": {
+      "enabled": false,
+      "server_id": "",
+      "channel_id": "",
+      "note": "Use this feature to easily integrate widgetbot.io into your client. Follow the guide on https://widgetbot.io to set it up."
+    },
+    "status":{
+      "enabled": true, 
+      "url": "https://example.status.link"
+    },
+      "giftres":{
+      "enabled": true, 
+      "note": "This allows you to decide if you want your users to gift resources or not"
+    },
+    
+      "discordserver":{
+      "enabled": true, 
+      "invitelink": "https://discord.gg/nmpzPF5rnW" 
+    },
+      "donate":{
+      "enabled": true, 
+      "link": "" 
+    },
+  
+   
+    "database": "database.sqlite", 
+    "api": {
+      "client": {
+         "api": {
            "enabled": false,
-           "guildid": [""],
-           "forcejoin": false,
-           "registeredrole": null
-        }
-      },
-      "webhook": {
-        "_comment": "URL of the webhook to send client's logs to.",
-        "webhook_url": "https://discord.com/api/webhooks/12345676/huwhduwhdwudhuwhawuhdwuwhz",
-        "auditlogs": {
-          "_comment": "This feature allows you to log actions, and get an overview of a users actions (only works if done with qwakeactyl, not ptero)",
-          "enabled": false, 
-          "_comment2": "The types of notifications disabled. Values: ADMIN, LOGIN, SERVER, COUPONREDEEM",
-          "disabled": [] 
-        }
-      },
-      "passwordgenerator": {
-        "signup": true, 
-        "length": 4 
-      },
-      "allow": {    
-        "newusers": true,
-        "regen": true,
-        "server": {
-          "create": true,
-          "modify": true,
-          "delete": true
+           "code": ""
+         },
+         "j4r": {
+          "enabled": true, 
+          "ads": [
+            {
+              "name": "Name",
+              "invite": "Discord Server invite",
+              "id": "Server Id",
+              "ram": "512",
+              "disk": 512,
+              "cpu": 20
+            },
+            {
+              "name": "Name",
+              "invite": "Discord Server invite",
+              "id": "Server Id",
+              "ram": "512",
+              "disk": 512,
+              "cpu": 20
+            }
+          ]
         },
-        "overresourcessuspend": true, 
-        "renewsuspendsystem": { 
-          "_comment": "This feature requires a restart in order to work. Also, this requires every server to start suspended, or else this feature would not work for some servers.",
-          "enabled": false,
-          "time": 3600,
-          "cost": 0
-        }
-      },
-      "oauth2": {
-        "_comment": "Go to https://discord.dev/ and create an application to set these up.",
-        "id": "12345678", 
-        "secret": "HduwhDUhwdIjwKdwMDwwa", 
-        "link": "", 
-        "callbackpath": "/callback",
-        "prompt": true, 
-
-        "ip": { 
-          "trust x-forwarded-for": true,
-          "block": [],
-
-          "_comment": "'duplicate check' is an anti-alt check by IPs.",
-          "duplicate check": false,
-
-          "_comment2": "'cookie alt check' is an anti-alt check by cookies.",
-          "cookie alt check": true
-        }
-      },
-      "ratelimits": { 
-        "enabled": true,
-
-        "trust x-forwarded-for": true,
-
-        "requests": 30,
-        "per second": 60
-      },
-      "packages": { 
-        "default": "default",
-        "list": {
-          "default": {
-            "ram": 2048,
-            "disk": 4096,
-            "cpu": 100,
-            "servers": 2
+         "bot": {
+           "token": "",
+           "joinguild": {
+             "_comment": "The Discord bot must be in these servers and have invite permissions.",
+             "enabled": false,
+             "guildid": [""],
+             "forcejoin": false,
+             "registeredrole": null
           }
         },
-          "premium": "premium", 
+        "webhook": {
+          "_comment": "URL of the webhook to send client's logs to.",
+          "webhook_url": "https://discord.com/api/webhooks/12345676/huwhduwhdwudhuwhawuhdwuwhz",
+          "auditlogs": {
+            "_comment": "This feature allows you to log actions, and get an overview of a users actions (only works if done with qwakeactyl, not ptero)",
+            "enabled": false, 
+            "_comment2": "The types of notifications disabled. Values: ADMIN, LOGIN, SERVER, COUPONREDEEM",
+            "disabled": [] 
+          }
+        },
+        "passwordgenerator": {
+          "signup": true, 
+          "length": 4 
+        },
+        "allow": {    
+          "newusers": true,
+          "regen": true,
+          "server": {
+            "create": true,
+            "modify": true,
+            "delete": true
+          },
+          "overresourcessuspend": true, 
+          "renewsuspendsystem": { 
+            "_comment": "This feature requires a restart in order to work. Also, this requires every server to start suspended, or else this feature would not work for some servers.",
+            "enabled": false,
+            "time": 3600,
+            "cost": 0
+          }
+        },
+        "oauth2": {
+          "_comment": "Go to https://discord.dev/ and create an application to set these up.",
+          "id": "12345678", 
+          "secret": "HduwhDUhwdIjwKdwMDwwa", 
+          "link": "", 
+          "callbackpath": "/callback",
+          "prompt": true, 
+  
+          "ip": { 
+            "trust x-forwarded-for": true,
+            "block": [],
+  
+            "_comment": "'duplicate check' is an anti-alt check by IPs.",
+            "duplicate check": false,
+  
+            "_comment2": "'cookie alt check' is an anti-alt check by cookies.",
+            "cookie alt check": true
+          }
+        },
+        "ratelimits": { 
+          "enabled": true,
+  
+          "trust x-forwarded-for": true,
+  
+          "requests": 30,
+          "per second": 60
+        },
+        "packages": { 
+          "default": "default",
           "list": {
             "default": {
               "ram": 2048,
               "disk": 4096,
               "cpu": 100,
               "servers": 2
-            }
-          }
-      },
-      
-      "locations": { 
-        "1": {
-          "name": "India-1",
-
-          "_comment": "Make 'package' be null to allow anyone with enough resources in their plan to create a server with this location. Also, make the 'package' variable an array, like [], with the location names with quotes to make a user be required to have a plan in order to use the package.",
-          "package": null
-        },
-        "2": {
-          "name": "India-2",
-
-          "_comment": "Make 'package' be null to allow anyone with enough resources in their plan to create a server with this location. Also, make the 'package' variable an array, like [], with the location names with quotes to make a user be required to have a plan in order to use the package.",
-          "package": null
-        }
-      },
-      "eggs": { 
-        "paper": {
-          "display": "Paper",
-          "minimum": {
-            "ram": 1024,
-            "disk": 1024,
-            "cpu": 50
-          },
-          "maximum": {
-            "ram": null,
-            "disk": null,
-            "cpu": null
-          },
-          "info": {
-            "egg": 3,
-            "docker_image": "ghcr.io/pterodactyl/yolks:java_17",
-            "startup": "java -Xms128M -Xmx{{SERVER_MEMORY}}M -Dterminal.jline=false -Dterminal.ansi=true -jar {{SERVER_JARFILE}}",
-            "environment": {
-              "SERVER_JARFILE": "server.jar",
-              "BUILD_NUMBER": "latest"
             },
-            "feature_limits": {
-              "databases": 1,
-              "backups": 1,
-              "allocation": 1
-            }
+            "premium": {
+                "ram": 4096,
+                "disk": 10000,
+                "cpu": 100,
+                "servers": 2
+              }
           }
         },
-        "pocketmine": {
-          "display": "Pocketmine",
-          "minimum": {
-            "ram": 512,
-            "disk": 512,
-            "cpu": 50
+        
+        "locations": { 
+          "1": {
+            "name": "India-1",
+  
+            "_comment": "Make 'package' be null to allow anyone with enough resources in their plan to create a server with this location. Also, make the 'package' variable an array, like [], with the location names with quotes to make a user be required to have a plan in order to use the package.",
+            "package": null
           },
-          "maximum": {
-            "ram": null,
-            "disk": null,
-            "cpu": null
-          },
-          "info": {
-            "egg": 45,
-            "docker_image": "ghcr.io\/parkervcp\/yolks:debian",
-            "startup": "\/bin\/php7\/bin\/php .\/PocketMine-MP.phar --no-wizard --disable-ansi",
-            "environment": {
-              "VERSION": "PM4"
+          "2": {
+            "name": "India-2",
+  
+            "_comment": "Make 'package' be null to allow anyone with enough resources in their plan to create a server with this location. Also, make the 'package' variable an array, like [], with the location names with quotes to make a user be required to have a plan in order to use the package.",
+            "package": null
+          }
+        },
+        "eggs": { 
+          "paper": {
+            "display": "Paper",
+            "minimum": {
+              "ram": 1024,
+              "disk": 1024,
+              "cpu": 50
             },
-            "feature_limits": {
-              "databases": 1,
-              "backups": 1
+            "maximum": {
+              "ram": null,
+              "disk": null,
+              "cpu": null
+            },
+            "info": {
+              "egg": 3,
+              "docker_image": "ghcr.io/pterodactyl/yolks:java_17",
+              "startup": "java -Xms128M -Xmx{{SERVER_MEMORY}}M -Dterminal.jline=false -Dterminal.ansi=true -jar {{SERVER_JARFILE}}",
+              "environment": {
+                "SERVER_JARFILE": "server.jar",
+                "BUILD_NUMBER": "latest"
+              },
+              "feature_limits": {
+                "databases": 1,
+                "backups": 1,
+                "allocation": 1
+              }
+            }
+          },
+          "pocketmine": {
+            "display": "Pocketmine",
+            "minimum": {
+              "ram": 512,
+              "disk": 512,
+              "cpu": 50
+            },
+            "maximum": {
+              "ram": null,
+              "disk": null,
+              "cpu": null
+            },
+            "info": {
+              "egg": 45,
+              "docker_image": "ghcr.io\/parkervcp\/yolks:debian",
+              "startup": "\/bin\/php7\/bin\/php .\/PocketMine-MP.phar --no-wizard --disable-ansi",
+              "environment": {
+                "VERSION": "PM4"
+              },
+              "feature_limits": {
+                "databases": 1,
+                "backups": 1
+              }
+            }
+          },
+          "Bedrock": {
+            "display": "Bedrock",
+            "minimum": {
+              "ram": 512,
+              "disk": 512,
+              "cpu": 50
+            },
+            "maximum": {
+              "ram": null,
+              "disk": null,
+              "cpu": null
+            },
+            "info": {
+              "egg": 50,
+              "docker_image": "ghcr.io\/parkervcp\/yolks:box64",
+              "startup": "box64 .\/bedrock_server",
+              "environment": {
+                "BEDROCK_VERSION": "latest",
+                "DIFFICULTY": "easy",
+                "CHEATS": "false",
+                "GAMEMODE": "survival",
+                "LD_LIBRARY_PATH": ".",
+                "SERVERNAME": "MineCube Hosting"
+              },
+              "feature_limits": {
+                "databases": 1,
+                "backups": 1
+              }
+            }
+          },
+        "Nukkit": {
+            "display": "Nukkit",
+            "minimum": {
+              "ram": 512,
+              "disk": 512,
+              "cpu": 50
+            },
+            "maximum": {
+              "ram": null,
+              "disk": null,
+              "cpu": null
+            },
+            "info": {
+              "egg": 46,
+              "docker_image": "quay.io\/pterodactyl\/core:java-glibc",
+              "startup": "java -Xms128M -Xmx{{SERVER_MEMORY}}M -jar {{SERVER_JARFILE}}",
+              "environment": {
+                "NUKKIT_VERSION": "latest",
+                "SERVER_JARFILE": "server.jar",
+                "DL_PATH": ""
+              },
+              "feature_limits": {
+                "databases": 1,
+                "backups": 1
+              }
+            }
+          },
+        "Spigot": {
+            "display": "Spigot",
+            "minimum": {
+              "ram": 512,
+              "disk": 512,
+              "cpu": 50
+            },
+            "maximum": {
+              "ram": null,
+              "disk": null,
+              "cpu": null
+            },
+            "info": {
+              "egg": 49,
+              "docker_image": "ghcr.io\/pterodactyl\/yolks:java_17",
+              "startup": "java -Xms128M -Xmx{{SERVER_MEMORY}}M -jar {{SERVER_JARFILE}}",
+              "environment": {
+                "SERVER_JARFILE": "server.jar",
+                "DL_VERSION": "latest",
+                "DL_PATH": ""
+              },
+              "feature_limits": {
+                "databases": 1,
+                "backups": 1
+              }
             }
           }
         },
-        "Bedrock": {
-          "display": "Bedrock",
-          "minimum": {
-            "ram": 512,
-            "disk": 512,
-            "cpu": 50
-          },
-          "maximum": {
-            "ram": null,
-            "disk": null,
-            "cpu": null
-          },
-          "info": {
-            "egg": 50,
-            "docker_image": "ghcr.io\/parkervcp\/yolks:box64",
-            "startup": "box64 .\/bedrock_server",
-            "environment": {
-              "BEDROCK_VERSION": "latest",
-              "DIFFICULTY": "easy",
-              "CHEATS": "false",
-              "GAMEMODE": "survival",
-              "LD_LIBRARY_PATH": ".",
-              "SERVERNAME": "MineCube Hosting"
-            },
-            "feature_limits": {
-              "databases": 1,
-              "backups": 1
-            }
-          }
-        },
-      "Nukkit": {
-          "display": "Nukkit",
-          "minimum": {
-            "ram": 512,
-            "disk": 512,
-            "cpu": 50
-          },
-          "maximum": {
-            "ram": null,
-            "disk": null,
-            "cpu": null
-          },
-          "info": {
-            "egg": 46,
-            "docker_image": "quay.io\/pterodactyl\/core:java-glibc",
-            "startup": "java -Xms128M -Xmx{{SERVER_MEMORY}}M -jar {{SERVER_JARFILE}}",
-            "environment": {
-              "NUKKIT_VERSION": "latest",
-              "SERVER_JARFILE": "server.jar",
-              "DL_PATH": ""
-            },
-            "feature_limits": {
-              "databases": 1,
-              "backups": 1
-            }
-          }
-        },
-      "Spigot": {
-          "display": "Spigot",
-          "minimum": {
-            "ram": 512,
-            "disk": 512,
-            "cpu": 50
-          },
-          "maximum": {
-            "ram": null,
-            "disk": null,
-            "cpu": null
-          },
-          "info": {
-            "egg": 49,
-            "docker_image": "ghcr.io\/pterodactyl\/yolks:java_17",
-            "startup": "java -Xms128M -Xmx{{SERVER_MEMORY}}M -jar {{SERVER_JARFILE}}",
-            "environment": {
-              "SERVER_JARFILE": "server.jar",
-              "DL_VERSION": "latest",
-              "DL_PATH": ""
-            },
-            "feature_limits": {
-              "databases": 1,
-              "backups": 1
-            }
-          }
-        }
-      },
-      "coins": { 
-        "enabled": true,
-        "store": {
-          "_comment": "The cost and per is not intended to used with 0. This is not intended to sell resources for coins. Make sure coins are enabled too, or else there can be errors.",
-          "enabled": true, 
-          "ram": {
-            "cost": 2500, 
-            "per": 250 
-          },
-          "disk": {
-            "cost": 250,
-            "per": 100 
-          },
-          "cpu": {
-            "cost": 150,
-            "per": 5 
-          },
-          "servers": {
-            "cost": 200, 
-            "per": 1
-          }
-        }
-      }
-    },
-    "arcio": {
-      "_comment": "You can make an arc.io widget on https://arc.io. You can get money using arc.io.",
-      "enabled": true,
-      "widgetid": "", 
-
-        "afk page": { 
-          "_comment": "This will not effect any current arc.io sessions, and will require a restart to kick everyone out of the websocket sesison.",
-          "_comment2": "Make sure coins are enabled if you choose to enable this option!",
+        "coins": { 
           "enabled": true,
-
-          "_comment3": "If you change the path, you need to restart for it to take full effect.",
-          "path": "afkwspath",
-
-          "_comment4": "This afk page will give the users [coins variable] coins every [every variable] seconds.",
-          "every": 60,
-
-          "_comment5": "The coins variable is meant to not be under 1. There may be bugs if the coins variable is less than 1.",
-          "coins": 2
+          "store": {
+            "_comment": "The cost and per is not intended to used with 0. This is not intended to sell resources for coins. Make sure coins are enabled too, or else there can be errors.",
+            "enabled": true, 
+            "ram": {
+              "cost": 2500, 
+              "per": 250 
+            },
+            "disk": {
+              "cost": 250,
+              "per": 100 
+            },
+            "cpu": {
+              "cost": 150,
+              "per": 5 
+            },
+            "servers": {
+              "cost": 200, 
+              "per": 1
+            }
+          }
         }
+      },
+      "arcio": {
+        "_comment": "You can make an arc.io widget on https://arc.io. You can get money using arc.io.",
+        "enabled": true,
+        "widgetid": "", 
+  
+          "afk page": { 
+            "_comment": "This will not effect any current arc.io sessions, and will require a restart to kick everyone out of the websocket sesison.",
+            "_comment2": "Make sure coins are enabled if you choose to enable this option!",
+            "enabled": true,
+  
+            "_comment3": "If you change the path, you need to restart for it to take full effect.",
+            "path": "afkwspath",
+  
+            "_comment4": "This afk page will give the users [coins variable] coins every [every variable] seconds.",
+            "every": 60,
+  
+            "_comment5": "The coins variable is meant to not be under 1. There may be bugs if the coins variable is less than 1.",
+            "coins": 2
+          }
+      }
     }
   }
-}
+  
