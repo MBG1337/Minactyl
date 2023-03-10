@@ -2,8 +2,8 @@
   "version": "1",
   "defaulttheme": "Minactyl",
   "website": {
-    "port": 8000, //By default, 8000 is the port where the website is hosted on, edit this to your own port and dont forget to edit the nginx config
-    "secret": "ExampleSecret", //this is required for you to run your Minactyl Instance
+    "port": 8000, 
+    "secret": "ExampleSecret", 
     "maintenance": true,
 
     "sitekey": "",
@@ -11,13 +11,13 @@
     "note": "You Can Get These From https://www.google.com/recaptcha/admin, this is to ensure security of the host, We highly recommend getting it"
   },
   "companyinfo": {
-    "owner": "", //put your name here
-    "companyname": "", // put your host's name here, it will decide the sidebar heading as well as the footer
-    "clientlink": "" //put your client domain here, it will automatically make a privacy policy and tos for you.
+    "owner": "",
+    "companyname": "", 
+    "clientlink": "" 
    },
   "pterodactyl": {
-    "domain": "your_panel_link_goes_here", //paste your panel link here
-    "key": "ptla_ThisIsAnExampleKey" // get this api key from your pterodactyl panel
+    "domain": "your_panel_link_goes_here", 
+    "key": "ptla_ThisIsAnExampleKey" 
   },
   "google_ads": {
     "enabled": false,
@@ -25,9 +25,9 @@
     "note": "Using this, you can easily apply ad's to your client, for example, Google Adsense, Adsterra, etc."
   },
   "custom_ads":{
-    "enabled": false, //enable this if you want this feature to work
-    "pic": "", //the advertisement link
-    "link": "", //the link where the user will be directed to on click
+    "enabled": false, 
+    "pic": "", 
+    "link": "", 
     "width": "468",
     "height": "60",
     "note": "this feature allows you to display a custom advertisement on the client panel"
@@ -39,33 +39,33 @@
     "note": "Use this feature to easily integrate widgetbot.io into your client. Follow the guide on https://widgetbot.io to set it up."
   },
   "status":{
-    "enabled": true, //enable this if you want this feature to work
-    "url": "https://example.status.link" //your status page link goes here
+    "enabled": true, 
+    "url": "https://example.status.link"
   },
     "giftres":{
-    "enabled": true, //enable this if you want your users to gift
+    "enabled": true, 
     "note": "This allows you to decide if you want your users to gift resources or not"
   },
   
     "discordserver":{
-    "enabled": true, //enable this if you want this feature to work
-    "invitelink": "https://discord.gg/nmpzPF5rnW" //your discord server link goes here
+    "enabled": true, 
+    "invitelink": "https://discord.gg/nmpzPF5rnW" 
   },
     "donate":{
-    "enabled": true, //enable this if you want this feature to work
-    "link": "" //the link where people can donate
+    "enabled": true, 
+    "link": "" 
   },
 
  
-  "database": "database.sqlite", //main database file, by default its database.sqlite.
+  "database": "database.sqlite", 
   "api": {
     "client": {
        "api": {
-         "enabled": false, //leave it to false
+         "enabled": false,
          "code": ""
        },
        "j4r": {
-        "enabled": true, //enable this if you want this feature to work
+        "enabled": true, 
         "ads": [
           {
             "name": "Name",
@@ -100,16 +100,16 @@
         "webhook_url": "https://discord.com/api/webhooks/12345676/huwhduwhdwudhuwhawuhdwuwhz",
         "auditlogs": {
           "_comment": "This feature allows you to log actions, and get an overview of a users actions (only works if done with qwakeactyl, not ptero)",
-          "enabled": false, //enable this if you want logs to be sent to the webhook
+          "enabled": false, 
           "_comment2": "The types of notifications disabled. Values: ADMIN, LOGIN, SERVER, COUPONREDEEM",
-          "disabled": [] //here you can add audit logs that you dont want to receive 
+          "disabled": [] 
         }
       },
       "passwordgenerator": {
-        "signup": true, //this will generate a password for the user on signup. Disable it if you dont want it to generate a password on signup.
-        "length": 4 //the lenght of each of the password generated
+        "signup": true, 
+        "length": 4 
       },
-      "allow": {     //here you can choose what users can do or cannot do
+      "allow": {    
         "newusers": true,
         "regen": true,
         "server": {
@@ -117,8 +117,8 @@
           "modify": true,
           "delete": true
         },
-        "overresourcessuspend": true, //this feature will monitor every server and will suspend it if they use more resources than they have.
-        "renewsuspendsystem": { //here you can decide if you want renewal for the servers or not.
+        "overresourcessuspend": true, 
+        "renewsuspendsystem": { 
           "_comment": "This feature requires a restart in order to work. Also, this requires every server to start suspended, or else this feature would not work for some servers.",
           "enabled": false,
           "time": 3600,
@@ -127,13 +127,13 @@
       },
       "oauth2": {
         "_comment": "Go to https://discord.dev/ and create an application to set these up.",
-        "id": "12345678", //your discord application id
-        "secret": "HduwhDUhwdIjwKdwMDwwa", //your discord application secret
-        "link": "", //your client's link, MAKE SURE TO ADD a redirect, and please include your callback path in the redirect. eg: https://client.example.in/callback would be your redirect
+        "id": "12345678", 
+        "secret": "HduwhDUhwdIjwKdwMDwwa", 
+        "link": "", 
         "callbackpath": "/callback",
         "prompt": true, 
 
-        "ip": { //basically checks users for alts and helps prevent bots. Note : Recaptcha is required for this to work
+        "ip": { 
           "trust x-forwarded-for": true,
           "block": [],
 
@@ -144,7 +144,7 @@
           "cookie alt check": true
         }
       },
-      "ratelimits": { //this enabled rate limits for users. If a user if comitting actions quickly, he will be given a ratelimit
+      "ratelimits": { 
         "enabled": true,
 
         "trust x-forwarded-for": true,
@@ -152,7 +152,7 @@
         "requests": 30,
         "per second": 60
       },
-      "packages": { //default is the package you want to give to your users on default
+      "packages": { 
         "default": "default",
         "list": {
           "default": {
@@ -162,7 +162,7 @@
             "servers": 2
           }
         },
-          "premium": "premium", //here is an extra package, edit it as you like.
+          "premium": "premium", 
           "list": {
             "default": {
               "ram": 2048,
@@ -173,7 +173,7 @@
           }
       },
       
-      "locations": { //add nodes to the client. NOTE: each node requires its own location
+      "locations": { 
         "1": {
           "name": "India-1",
 
@@ -187,7 +187,7 @@
           "package": null
         }
       },
-      "eggs": { //add eggs to your client
+      "eggs": { 
         "paper": {
           "display": "Paper",
           "minimum": {
@@ -325,26 +325,26 @@
           }
         }
       },
-      "coins": { //if you want coins and store to be enabled. Enabling this will allow users to buy things from the resource shop using coins.
+      "coins": { 
         "enabled": true,
         "store": {
           "_comment": "The cost and per is not intended to used with 0. This is not intended to sell resources for coins. Make sure coins are enabled too, or else there can be errors.",
-          "enabled": true, //if store is enabled or not
+          "enabled": true, 
           "ram": {
-            "cost": 2500, //cost of ram
-            "per": 250 //per amount of ram
+            "cost": 2500, 
+            "per": 250 
           },
           "disk": {
-            "cost": 250, //cost of disk
-            "per": 100 //per amount of disk
+            "cost": 250,
+            "per": 100 
           },
           "cpu": {
-            "cost": 150, //cost of cpu cores
-            "per": 5 //per amount of cpu
+            "cost": 150,
+            "per": 5 
           },
           "servers": {
-            "cost": 200, //cost of extra server slots
-            "per": 1 //per amount of servers
+            "cost": 200, 
+            "per": 1
           }
         }
       }
@@ -352,9 +352,9 @@
     "arcio": {
       "_comment": "You can make an arc.io widget on https://arc.io. You can get money using arc.io.",
       "enabled": true,
-      "widgetid": "", //the arc io widget id
+      "widgetid": "", 
 
-        "afk page": { //this is most benefitable for arc.io users but you can use afk without arc.io.
+        "afk page": { 
           "_comment": "This will not effect any current arc.io sessions, and will require a restart to kick everyone out of the websocket sesison.",
           "_comment2": "Make sure coins are enabled if you choose to enable this option!",
           "enabled": true,
